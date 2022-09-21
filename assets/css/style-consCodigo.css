@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.containner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    margin: auto;
+    margin-top: 50px;
+    width: 600px;
+    
+}
+
+
+thead{
+    background-color: #333;
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 10px;
+}
+
+
+tbody{
+    text-align: center;
+    font-size: 18px;
+}
+
+form{
+    
+    margin:auto;
+    margin-top: 30px;
+}
+
+form input{
+    height: 25px;
+}
+label{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+button{
+    width: 100px;
+    background-color: green;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}

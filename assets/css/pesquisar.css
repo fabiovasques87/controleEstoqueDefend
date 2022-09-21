@@ -1,0 +1,866 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.containner{
+  
+    display: grid;
+    grid-gap: 10px;
+    height: 700px;
+}
+
+header{
+ 
+    /*
+
+    grid-row-start
+    grd-column-start
+    grid-row-end
+    grid-column-end
+    */
+    /* margin-left: -235px; */
+    background-color: #2C3639;
+    grid-area:1 / 2 / 2 / 4;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    color: #fff;
+ 
+  
+}
+aside{
+   
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    
+    grid-area: 1 / 1 / 3 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    width: 200px;
+    height: 700px;
+    background-color: #0388d1;
+    position: fixed;
+    
+    
+}
+
+.titulo{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 20px;
+    
+}
+
+.menu{
+    margin-top: 60px;
+    margin-left: -35px;
+}
+
+.menu, nav ul li{
+    color: #fff;
+    text-transform: capitalize;
+    list-style: none;
+    padding: 10px;
+    
+
+}
+
+
+.menu, nav ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+      
+}
+
+
+.menu-opener{
+    margin-top:-10px;
+    display:none;
+}
+
+.menu--opener1,.menu--opener2,.menu--opener3{
+    width:40px;
+    padding:4px;
+    border-bottom:4px solid;
+    display:none;
+}
+
+
+li {
+  
+
+    display: block;
+}
+
+ul li a:hover{
+    border-bottom: 1px solid #dffda7;
+    color:#fff;
+   
+   
+  
+}
+
+.fa-trash-can{
+    font-size: 18px;
+    color: red;
+    cursor: pointer;
+    
+}
+
+.fa-print {
+    color: green;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.pesquisar{
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 1px solid #999999;
+    outline: 0;
+    width: 100%;
+    max-width: 500px;
+    
+    
+}
+
+label {
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+
+
+.buttonPesquisar{
+    border: 0;
+    background-color: transparent;
+    margin-left: -50px;
+    cursor: pointer;
+   
+}
+
+.buttonPesquisar img{
+    width:30px;
+    height: 30px;
+}
+
+
+.form{
+    display: none;
+}
+
+
+.WindowAreaPesquisa{
+    display: flex;
+}
+
+
+.cancelButtonPesquisa {
+   
+    padding:10px 20px;
+    width: 140px;
+    border-radius:2px;
+    background-color:#48d05f;
+    color:#FFF;
+    display:inline-block;
+    cursor:pointer;
+    margin-top: 10px;
+    margin-left: 150px;
+    text-align: center;
+}
+
+.buttonsMobile{
+    display: none;
+}
+
+
+.WindowAreaPesquisa {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    display:flex;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+    
+}
+
+
+.WindowBodyPesquisa {
+    width:550px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* Responsividade */
+
+@media (min-width: 576px) AND (max-width: 900px) {
+
+    header{
+        width: 900px;
+        margin-bottom: 0px;
+    }
+
+
+
+    .titulo{
+        font-size:12px;
+        margin-left:90px;
+    }
+
+    .bem-vindo, .sobre{
+        font-size:8px;
+    }
+
+    .sobre{
+        display:none;
+    }
+
+    .menu-opener{
+        margin-top:-10px;
+        display:block;
+    }
+
+    .menu--opener1,.menu--opener2,.menu--opener3{
+        width:40px;
+        padding:4px;
+        border-bottom:4px solid;
+        display:block;
+        
+    }
+
+
+    .menu nav ul, aside{
+ 
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(3, 136, 209, 0.71);
+        width: 60vw;
+        height: calc(100vh);
+        left: 0;
+        
+    } 
+    
+    aside{
+        display:none;
+     }
+
+
+     .menu, nav ul a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+          
+    }
+
+    .menu, nav ul li{
+       
+        padding: 16px;
+        
+    
+    }
+
+    .table1{
+        margin-top: 5   0px;
+    }
+
+    .fa-solid {
+        font-size: 16px;
+    }
+
+
+    .titulo{
+        font-size:12px;
+        margin-left:90px;
+    }
+
+    .bem-vindo, .sobre{
+        font-size:8px;
+    }
+
+    .sobre{
+        display:none;
+    }
+
+    label, .pesquisar{
+        margin-left: 5px;
+    }
+
+    .WindowAreaPesquisa{
+        display: none;
+    }
+
+    .form{
+        margin-top: 0px;
+        display: block;
+    }
+    
+
+.buttonsMobile{
+    display: block;
+}
+
+
+}   
+
+
+@media (min-width: 541px) AND (max-width: 575px) {
+
+
+    aside{
+        display: none;
+    }
+    .table1{
+        margin-top: 50px;
+    }
+
+
+    .fa-solid {
+        font-size: 16px;
+    }
+
+    .menu-opener{
+        margin-top:-10px;
+        display:block;
+    }
+
+    .menu--opener1,.menu--opener2,.menu--opener3{
+        width:40px;
+        padding:4px;
+        border-bottom:4px solid;
+        display:block;
+        
+    }
+
+
+    .menu nav ul, aside{
+ 
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(3, 136, 209, 0.71);
+        width: 60vw;
+        height: calc(100vh);
+        left: 0;
+        
+    } 
+    
+    aside{
+        display:none;
+     }
+
+
+     .menu, nav ul a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+          
+    }
+
+    .menu, nav ul li{
+       
+        padding: 16px;
+        
+    
+    }
+
+
+    .titulo{
+        font-size:12px;
+        margin-left:10px;
+    }
+
+    .bem-vindo, .sobre{
+        font-size:8px;
+    }
+
+    .sobre{
+        display:none;
+    }
+
+
+    label, .pesquisar{
+        margin-left: 5px;
+    }
+
+    .pesquisar{
+        width: 100%;
+        max-width: 530px;
+        
+    }
+
+    .WindowAreaPesquisa{
+        display: none;
+    }
+
+ 
+    .form{
+        margin-top: 0px;
+        display: block;
+    }
+    
+
+.buttonsMobile{
+    display: block;
+}
+
+
+}
+
+@media (min-width: 491px) AND (max-width: 540px) {
+
+
+    aside{
+        display: none;
+    }
+    .table1{
+        margin-top: 50px;
+    }
+
+
+    .fa-solid {
+        font-size: 16px;
+    }
+
+    .menu-opener{
+        margin-top:-10px;
+        display:block;
+    }
+
+    .menu--opener1,.menu--opener2,.menu--opener3{
+        width:40px;
+        padding:4px;
+        border-bottom:4px solid;
+        display:block;
+        
+    }
+
+
+    .menu nav ul, aside{
+ 
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(3, 136, 209, 0.71);
+        width: 60vw;
+        height: calc(100vh);
+        left: 0;
+        
+    } 
+    
+    aside{
+        display:none;
+     }
+
+
+     .menu, nav ul a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+          
+    }
+
+    .menu, nav ul li{
+       
+        padding: 16px;
+        
+    
+    }
+
+
+    .titulo{
+        font-size:12px;
+        margin-left:10px;
+    }
+
+    .bem-vindo, .sobre{
+        font-size:8px;
+    }
+
+    .sobre{
+        display:none;
+    }
+
+
+    label, .pesquisar{
+        margin-left: 5px;
+    }
+
+    .pesquisar{
+        width: 100%;
+        max-width: 470px;
+        
+    }
+
+    .WindowAreaPesquisa{
+        display: none;
+    }
+
+    .form{
+        margin-top: 0px;
+        display: block;
+    }
+
+
+.buttonsMobile{
+    display: block;
+}
+
+    
+
+}
+
+@media (min-width: 451px) AND (max-width: 490px) {
+
+    aside{
+        display: none;
+    }
+    .table1{
+        margin-top: 50px;
+    }
+
+
+    .fa-solid {
+        font-size: 16px;
+    }
+
+    .menu-opener{
+        margin-top:-10px;
+        display:block;
+    }
+
+    .menu--opener1,.menu--opener2,.menu--opener3{
+        width:40px;
+        padding:4px;
+        border-bottom:4px solid;
+        display:block;
+        
+    }
+
+
+    .menu nav ul, aside{
+ 
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(3, 136, 209, 0.71);
+        width: 60vw;
+        height: calc(100vh);
+        left: 0;
+        
+    } 
+    
+    aside{
+        display:none;
+     }
+
+
+     .menu, nav ul a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+          
+    }
+
+    .menu, nav ul li{
+       
+        padding: 16px;
+        
+    
+    }
+
+
+    .titulo{
+        font-size:12px;
+        margin-left:10px;
+    }
+
+    .bem-vindo, .sobre{
+        font-size:8px;
+    }
+
+    .sobre{
+        display:none;
+    }
+
+
+    label, .pesquisar{
+        margin-left: 5px;
+    }
+
+    .pesquisar{
+        width: 100%;
+        max-width: 430px;
+        
+    }
+
+    .WindowAreaPesquisa{
+        display: none;
+    }
+
+    .form{
+        margin-top: 0px;
+        display: block;
+    }
+
+
+.buttonsMobile{
+    display: block;
+}
+
+    
+    
+}
+
+@media (min-width: 431px) AND (max-width: 450px) {
+
+    aside{
+        display: none;
+    }
+    .table1{
+        margin-top: 50px;
+    }
+
+
+    .fa-solid {
+        font-size: 16px;
+    }
+
+    .menu-opener{
+        margin-top:-10px;
+        display:block;
+    }
+
+    .menu--opener1,.menu--opener2,.menu--opener3{
+        width:40px;
+        padding:4px;
+        border-bottom:4px solid;
+        display:block;
+        
+    }
+
+
+    .menu nav ul, aside{
+ 
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(3, 136, 209, 0.71);
+        width: 60vw;
+        height: calc(100vh);
+        left: 0;
+        
+    } 
+    
+    aside{
+        display:none;
+     }
+
+
+     .menu, nav ul a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+          
+    }
+
+    .menu, nav ul li{
+       
+        padding: 16px;
+        
+    
+    }
+
+
+    .titulo{
+        font-size:12px;
+        margin-left:10px;
+    }
+
+    .bem-vindo, .sobre{
+        font-size:8px;
+    }
+
+    .sobre{
+        display:none;
+    }
+
+
+    label, .pesquisar{
+        margin-left: 5px;
+    }
+
+    .pesquisar{
+        width: 100%;
+        max-width: 500px;
+        
+    }
+ 
+    .WindowAreaPesquisa{
+        display: none;
+    }
+
+    .form{
+        margin-top: 0px;
+        display: block;
+    }
+    
+
+
+.buttonsMobile{
+        display: block;
+    }
+
+
+}
+
+
+@media (min-width: 400px) AND (max-width: 430px) {
+
+    aside{
+        display: none;
+    }
+    .table1{
+        margin-top: 50px;
+    }
+
+
+    .fa-solid {
+        font-size: 16px;
+    }
+
+    .menu-opener{
+        margin-top:-10px;
+        display:block;
+    }
+
+    .menu--opener1,.menu--opener2,.menu--opener3{
+        width:40px;
+        padding:4px;
+        border-bottom:4px solid;
+        display:block;
+        
+    }
+
+
+    .menu nav ul, aside{
+ 
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(3, 136, 209, 0.71);
+        width: 60vw;
+        height: calc(100vh);
+        left: 0;
+        
+    } 
+    
+    aside{
+        display:none;
+     }
+
+
+     .menu, nav ul a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+          
+    }
+
+    .menu, nav ul li{
+       
+        padding: 16px;
+        
+    
+    }
+
+
+    .titulo{
+        font-size:12px;
+        margin-left:10px;
+    }
+
+    .bem-vindo, .sobre{
+        font-size:8px;
+    }
+
+    .sobre{
+        display:none;
+    }
+
+
+    label, .pesquisar{
+        margin-left: 5px;
+    }
+
+
+   .WindowAreaPesquisa{
+    display: none;
+   }
+
+
+.form{
+    margin-top: 0px;
+    display: block;
+}
+
+.buttonsMobile{
+    display: block;
+}
+
+
+}

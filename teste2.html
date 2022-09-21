@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+    <script src="assets/js/js-teste-menu.js"></script>
+
+    <title>Document</title>
+
+    
+
+</head>
+<body>
+        
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark"  style="background-color: #3B7FD9; box-shadow: 3px 4px 4px 1px #000000;  width: 220px;" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav" >
+                        
+                
+                      
+                        <!--logo menu <img style="width:200px;height:150px;padding: 10px;  color:#000000; " src="img/logo1.png"> -->
+                        <a class="nav-link" href="index.php">
+                            <div class=" sb-nav-link-icon"  id="texto">&nbsp&nbsp<i class="fas fa-tachometer-alt"></i> &nbsp&nbsp&nbsp  DASHBOARD</div>
+                            
+                        </a>
+                        <a class="nav-link collapsed" href="#" style="color: #ffffff;" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon" "></div>
+                            Cadastros
+                            <div class="sb-sidenav-collapse-arrow"></div>
+                        </a>
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" id="texto" href="cad-cliente.php">Cadastro Clientes</a>
+                                <a class="nav-link" id="texto" href="cad-veiculo.php">Cadastro Veiculos</a>
+                                
+                             
+                            </nav>
+                        </div>
+
+                        
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" id="texto" aria-expanded="false" aria-controls="collapsePages">
+                            
+
+                            <!--icone-->&nbsp&nbsp
+                            &nbsp&nbsp&nbsp CONSULTAS  
+                            <div class="sb-sidenav-collapse-arrow"></div>
+                        </a>
+
+
+
+                        <div class="collapse" id="collapsePages" style="color:#112A46" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link collapsed" id="texto" href="cons-cliente.php">
+                                    Clientes
+                                    <div class="sb-sidenav-collapse-arrow"></div>
+                                </a>
+                                 <a class="nav-link collapse" id="texto" href="cons-veiculo.php">
+                                    Veiculos
+                                    <div class="sb-sidenav-collapse-arrow"></div>
+                                </a>
+                              
+
+                            </nav>
+                       </div>
+
+
+
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" id="texto" data-target="#relatorios" aria-expanded="false" aria-controls="relatorios">
+                            
+
+                             &nbsp&nbsp&nbsp RELATÓRIOS 
+                            <div class="sb-sidenav-collapse-arrow"><i class=""></i></div>
+                        </a>
+
+
+
+                        <div class="collapse" id="relatorios" style="color:#112A46" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link collapsed" id="texto" href="relat_filtro.php">
+                                    Troca de óleo
+                                    <div class="sb-sidenav-collapse-arrow"></div>
+                                </a>
+                              
+
+                            </nav>
+                       </div>
+                      
+                        
+                
+            </nav>
+    </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,4 +1,16 @@
 
+<?php
+session_start();
+
+// var_dump($_SESSION);
+require 'model/con.php';
+
+if(empty($_SESSION['lg'])) {
+    header("Location: home.php");
+    exit;
+}
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +49,7 @@ $(function () {
 <div class="container--pessoal">
     <header class="header--info">
             <div class="titulo">controle de materiais -- defend--</div>
-            <div class="bem-vindo">Bem vindo:<?php echo $_SESSION['nome']; ?></div>
+            <div class="bem-vindo">Bem vindo: <?php echo $_SESSION['nome']; ?></div>
             <div class="sair"><a href="sair.php"><i class="fa-solid fa-right-from-bracket"></i>sair</a> </div>
 
 

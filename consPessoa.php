@@ -164,6 +164,7 @@ $(function () {
 <div id="resultado">
         <?php
         
+        /*
             require 'controller/con.php';
 
             $stmt = $pdo->query('                    
@@ -176,6 +177,7 @@ $(function () {
             ;
             ');
 
+            */
                 ?>
                     
                     <div class="table-responsive">
@@ -194,9 +196,11 @@ $(function () {
                       </thead>
                 <?php 
 
+  /*
                 while ($row = $stmt->fetch())
                 {
 
+                  
                     ?>
 
                     <tbody>
@@ -217,7 +221,7 @@ $(function () {
                     <?php
                 }
 
-
+*/
 
         ?>
 

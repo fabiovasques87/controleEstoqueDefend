@@ -164,6 +164,7 @@ $(function () {
 <div id="resultado">
         <?php
         
+        /*
             require 'controller/con.php';
 
             $stmt = $pdo->query('                    
@@ -174,9 +175,9 @@ $(function () {
             INNER JOIN pessoa p on p.codPessoa = l.pessoa_codPessoa
             inner join empresaServico emp on l.empresaServico_codEmpresa = emp.codEmpresa;
             ');
-
+*/ 
                 ?>
-                    
+                   
                     <div class="table-responsive">
                     <table class="table align-middle">
                       <thead>
@@ -192,6 +193,8 @@ $(function () {
                         </tr>
                       </thead>
                 <?php 
+
+/*
 
                 while ($row = $stmt->fetch())
                 {
@@ -220,7 +223,7 @@ $(function () {
                 }
 
 
-
+*/
         ?>
 
 </div>          

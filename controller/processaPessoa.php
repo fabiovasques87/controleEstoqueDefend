@@ -19,7 +19,7 @@ require 'con.php';
 //$campo =$_POST['campo'];
 
 $stmt = $pdo->query("
-SELECT codProd,nomePessoa,nomeProd,dataInicialCadastro,dataFinalCadastro,situacaoCadastro,dataBaixa,statusMaterial,
+SELECT codProd,nomePessoa,descProd,dataInicialCadastro,dataFinalCadastro,situacaoCadastro,dataBaixa,statusMaterial,
 nomeEmpresa
 FROM produto prod
 INNER JOIN lancamento l on prod.codProd = l.produto_codProd
@@ -36,7 +36,7 @@ inner join empresaServico emp on l.empresaServico_codEmpresa = emp.codEmpresa
                     <tr>
                         <td>Codigo</td>
                         <td>Nome Pessoa</td>
-                        <td>Nome Produto</td>
+                        <td>Descrição Produto</td>
                         <td>Nome da Empresa Concerto</td>
                         <td>situacao Prod</td>
                         <td>Data Retirada</td>
@@ -60,7 +60,7 @@ while ($row = $stmt->fetch())
         <tr>
             <td><?php echo $row['codProd']; ?></td>
             <td><?php echo $row['nomePessoa']; ?></td>
-            <td><?php echo $row['nomeProd']; ?></td>
+            <td><?php echo $row['descProd']; ?></td>
             <td><?php echo $row['nomeEmpresa']; ?></td>
             <td><?php echo $row['situacaoCadastro']; ?></td>
             <td><?php echo date('d/m/Y', strtotime($row['dataInicialCadastro'])); ?></td>

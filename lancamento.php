@@ -188,7 +188,7 @@ $(function () {
                                 </div>                                                              
                                     <div class="col-md-4">
                                         <div class="form-group">                                        
-                                            <label class="prod">Nome Do Produto</label><span class="campo--obrigatorio">*</span>
+                                            <label class="prod">Descrição Do Produto</label><span class="campo--obrigatorio">*</span>
                                             <div id="resultado">  <input type="text" name="" class="form-control" id="nomeProd" placeholder="Nome do Produto"></div> 
                                                 <div class="alerta" id="alert-preencher-nomeProd"></div>
                                         </div>        

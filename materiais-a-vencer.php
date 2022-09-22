@@ -180,7 +180,7 @@ $(function () {
 
                           $sql = " 
 
-                          SELECT codProd, codCadastro,nomePessoa,nomeProd,dataInicialCadastro,dataFinalCadastro,situacaoCadastro
+                          SELECT codProd, codCadastro,nomePessoa,descProd,dataInicialCadastro,dataFinalCadastro,situacaoCadastro
                           FROM produto prod
                           INNER JOIN lancamento l on prod.codProd = l.produto_codProd
                           INNER JOIN pessoa p on p.codPessoa = l.pessoa_codPessoa

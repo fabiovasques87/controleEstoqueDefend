@@ -31,7 +31,6 @@ $stmt = $pdo->query("SELECT * FROM produto where codProd like '".$_POST['produto
     <thead>
         <tr>
             <td>Codigo</td>
-            <td>Nome</td>
             <td>Descrição</td>
         </tr>
     </thead>     -->
@@ -42,12 +41,11 @@ while ($row = $stmt->fetch())
 
     ?>
 
-    <input type="text" class="form-control" value="<?php echo $row['nomeProd']; ?>">
+    <input type="text" class="form-control" value="<?php echo $row['descProd']; ?>">
 
     <!-- <tbody>
         <tr>
             <td><?php echo $row['codProd']; ?></td>
-            <td><?php echo $row['nomeProd']; ?></td>
             <td><?php echo $row['descProd']; ?></td>
 
 

@@ -230,8 +230,8 @@ $(function () {
                                 </div>
                                 <div class="col-md-4">
                                               <div class="form-group">
-                                                  <label class="prod">Nome do produto</label><span class="campo--obrigatorio"></span>
-                                                  <input type="text" name="nomeProd" id="nomeProd" class="form-control" readonly value="<?php echo $info['nomeProd']?>">
+                                                  <label class="prod">Descrição do produto</label><span class="campo--obrigatorio"></span>
+                                                  <input type="text" name="nomeProd" id="nomeProd" class="form-control" readonly value="<?php echo $info['descProd']?>">
                                                       <div class="alerta" id="alert-preencher-telefonePessoa"></div>
                                               </div>        
                                       </div>                               

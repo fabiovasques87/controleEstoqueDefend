@@ -159,7 +159,7 @@ $(function () {
                                     </div>
                         <!--fim da linha-->
                         <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="form-group">
 
                                         <label class="prod">Cod do Produto</label><span class="campo--obrigatorio">*</span>
@@ -167,18 +167,13 @@ $(function () {
                                             <div class="alerta" id="alert-preencher-cod"></div>
 
                                     </div>        
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="prod">Nome do Produto</label><span class="campo--obrigatorio">*</span>
-                                            <input type="text" name="nomeProd" class="form-control" id="nomeProd" placeholder="Insira o nome do Produto">
-                                            <div class="alerta" id="alert-preencher-nome"></div>
-                                    </div>        
-                                </div>
-                                <div class="col-md-4">
+                                </div>                               
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Descrição do Produto</label>
-                                            <input type="text" name="descProd"  class="form-control" id="DesProd" placeholder="Insira a descrição do produto" >
+                                            <input type="text" name="descProd"  class="form-control" id="desProd" placeholder="Insira a descrição do produto" >
+                                            <div class="alerta" id="alert-preencher-descProd"></div>
+
                                     </div>        
                                 </div>
                                 <!-- FIm da linha-->        

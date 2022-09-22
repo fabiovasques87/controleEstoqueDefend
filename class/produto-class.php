@@ -5,7 +5,6 @@
 
 
 $codProd = $_POST['codProd'];
-$nomeProd = $_POST['nomeProd'];
 $descProd= $_POST['descProd'];
 
 class Produto {
@@ -41,13 +40,12 @@ try {
 
 
 
-public function adicionar ($codProd,$nomeProd,$descProd) {
+public function adicionar ($codProd,$descProd) {
 if($this->verificaCod($codProd) == false) {
-    $sql = $this->pdo->prepare("INSERT INTO produto SET codProd = :codProd, nomeprod = :nomeProd,descProd =:descProd");
+    $sql = $this->pdo->prepare("INSERT INTO produto SET codProd = :codProd,descProd =:descProd");
     
 
     $sql->bindParam(":codProd",$codProd);
-    $sql->bindParam(":nomeProd",$nomeProd);
     $sql->bindParam(":descProd",$descProd);
     $sql->execute();
 

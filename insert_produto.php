@@ -8,11 +8,10 @@
 		
 
 		$codProd = $_POST['codProd'];
-		$nomeProd = $_POST['nomeProd'];
 		$descProd = $_POST['descProd'];
 		
 
 
-		$produto ->adicionar($codProd,$nomeProd,$descProd);
+		$produto ->adicionar($codProd,$descProd);
 
 	

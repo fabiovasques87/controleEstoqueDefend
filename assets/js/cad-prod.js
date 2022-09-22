@@ -25,7 +25,7 @@ $(function(){
         // console.log('clicou no botão');
         
         let tcampo = $('#codProd').val().length;
-        let tcampo2 =  $('#nomeProd').val().length;
+        let tcampo2 =  $('#desProd').val().length;
 
         if(tcampo == 0)
         {
@@ -37,10 +37,10 @@ $(function(){
 
         if(tcampo2 == 0)
         {
-             let aviso2 = document.querySelector('#alert-preencher-nome');
-             aviso2.innerHTML="preencher o campo nome do produto";
-             document.querySelector('#alert-preencher-nome').style.display="block";
-                 //$('#nomeProd').focus();
+             let aviso2 = document.querySelector('#alert-preencher-descProd');
+             aviso2.innerHTML="preencher o campo Descrição do produto";
+             document.querySelector('#alert-preencher-descProd').style.display="block";
+                 $('#descProd').focus();
             
     
         }else {

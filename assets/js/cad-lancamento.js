@@ -181,7 +181,7 @@ $(function(){
     
 
     if (select.value==='Encaminhado para concerto'){
-      // console.log('acertou');
+       console.log(select.value);
 
     situacao.setAttribute("class","col-md-4");  //campo situacao recebe a classe md-4 para ficar menor e caber o outro do lado
     // select.setAttribute("class","col-md-4");
@@ -191,19 +191,29 @@ $(function(){
     // campoHiddenEmpresa.removeAttribute(name);
     // document.querySelector('#campoHiddenEmpresa').setAttribute(name, teste);
     // campoHiddenEmpresa.name='teste';
-    document.querySelector('#campoHiddenEmpresa').name='teste'; //troca o name do input para que permita ser enviado o name do input selecionado
+    document.querySelector('#campoHiddenEmpresa').name='empresaServico_codEmpresa'; //troca o name do input para que permita ser enviado o name do input selecionado
 
-    }else if(select.value !== 'Encaminhado para concerto'){
-      campoConcerto.style.display="none";
+     }else {
+           campoConcerto.style.display="none";
       labelConcerto.style.display="none";
       situacao.setAttribute("class","col-md-8");  //campo situacao recebe a classe md-8 para ficar maior
-      campoHiddenEmpresa.style.display="block";
+       campoHiddenEmpresa.style.display="block";
       // campoHiddenEmpresa.setAttribute("name","empresaServico_codEmpresa");
       // campoConcerto.name='empresaServico_codEmpresa';
-      document.querySelector('#pessoa_codPessoa').name='teste1'; //troca o name do input para que permita ser enviado o name do input selecionado
+     document.querySelector('#pessoa_codPessoa').name=''; //troca o name do input para que permita ser enviado o name do input selecionado
+
+     }
+     //else if(select.value !== 'Encaminhado para concerto'){
+    //   campoConcerto.style.display="none";
+    //   labelConcerto.style.display="none";
+    //   situacao.setAttribute("class","col-md-8");  //campo situacao recebe a classe md-8 para ficar maior
+    //   campoHiddenEmpresa.style.display="block";
+    //   // campoHiddenEmpresa.setAttribute("name","empresaServico_codEmpresa");
+    //   // campoConcerto.name='empresaServico_codEmpresa';
+    //   document.querySelector('#pessoa_codPessoa').name='teste1'; //troca o name do input para que permita ser enviado o name do input selecionado
 
   
-    }
+    // }
 
     
     // console.log(select.value);

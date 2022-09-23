@@ -351,7 +351,7 @@ $(function () {
 
                                         <div class="cadastrarButton" id="botCad">Cadastrar</div>
 
-                                        <!-- <input type="submit" value="enviar"> -->
+                                        <input type="submit" value="enviar">
                             </div>    
 
                             <div class="status">
@@ -493,7 +493,7 @@ $(function () {
 <script src="assets/js/cad-lancamento.js"></script>
 <script src="assets/js/listaDados.js"></script> 
 
-<!--Link aobaixo para funcionar o meu dropdow-->
+<!-- Link aobaixo para funcionar o meu dropdow -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
 </body>

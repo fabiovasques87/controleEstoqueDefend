@@ -209,7 +209,7 @@ $(function () {
 
                               <th>Codigo produto</hd>
                               <th>Nome Pessoa</th>
-                              <th>Nome do produto</th>
+                              <th>Descrição do produto</th>
                               <th>Data Retirada</th>
                               <th>Situação </th>
 
@@ -243,8 +243,8 @@ $(function () {
                                         </td>
                                         <td>
                                               <input class="form-itens" type="hidden" name="nomeProd" value="
-                                              <?php echo $item['nomeProd'];  ?>" >
-                                              <?php echo $item['nomeProd'];  ?> 
+                                              <?php echo $item['descProd'];  ?>" >
+                                              <?php echo $item['descProd'];  ?> 
 
                                         </td>
                                         <td>

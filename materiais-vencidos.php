@@ -190,7 +190,7 @@ $(function () {
 
                            dataFinalCadastro < current_date()
 
-                          AND statusMaterial = 'A'
+                          AND statusMaterial = 'A' AND situacaoCadastro <> 'Definitivo'
 
                           LIMIT $p, 100";
                           $sql = $pdo->query($sql);
@@ -211,7 +211,7 @@ $(function () {
 
                               <th>Codigo produto</hd>
                               <th>Nome Pessoa</th>
-                              <th>Nome do produto</th>
+                              <th>Descrição do produto</th>
                               <th>Data Inicial</th>
                               <th>Data de entrega </th>
                               <th>Situação </th>
@@ -246,8 +246,8 @@ $(function () {
                                         </td>
                                         <td>
                                               <input class="form-itens" type="hidden" name="nomeProd" value="
-                                              <?php echo $item['nomeProd'];  ?>" >
-                                              <?php echo $item['nomeProd'];  ?> 
+                                              <?php echo $item['descProd'];  ?>" >
+                                              <?php echo $item['descProd'];  ?> 
 
                                         </td>
                                         <td>

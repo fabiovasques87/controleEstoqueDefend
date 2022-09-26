@@ -2124,6 +2124,10 @@ a{
     display: none;
    }
 
+   .form--login span img{
+    margin-left:210px;
+
+}
 
  
    

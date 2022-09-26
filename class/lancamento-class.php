@@ -116,11 +116,8 @@ public function getPessoas ( ) {
 
 public function getEmpresa ( ) {
 
-    //seleciona todos as empresa que forem diferentes de teste pois a empresa de nome teste vai servir de referencia
-    //para salvar os dados quando forem emprestados e não enviados para concerto, sendo assim esse codigo não poderá 
-    //ser excluido
-
-    $sql = "select * from empresaServico where nomeEmpresa <> 'teste' ";
+   
+    $sql = "select * from empresaServico";
 
     $sql = $this->pdo->query($sql);
 

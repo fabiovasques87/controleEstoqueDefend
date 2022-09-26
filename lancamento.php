@@ -291,6 +291,8 @@ $(function () {
                                                 </div>        
                                             </div>
 
+                                            <!-- Envia o id um para o banco caso sejá escolhida a opcao de 
+                                          situacao = emprestado-->
                                             <input type="hidden" value="1" id="campoHiddenEmpresa" name="empresaServico_codEmpresa">
 
 

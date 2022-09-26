@@ -39,7 +39,7 @@ $lancamento = new Lancamento();
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="assets/css/styleLancamento2.css">
+<link rel="stylesheet" type="text/css" href="assets/css/styleLancamento.css">
 <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
 <!--  Botstrap 5 -->
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -351,7 +351,7 @@ $(function () {
 
                                         <div class="cadastrarButton" id="botCad">Cadastrar</div>
 
-                                        <input type="submit" value="enviar">
+                                        <!-- <input type="submit" value="enviar"> -->
                             </div>    
 
                             <div class="status">

@@ -162,7 +162,7 @@ $(function () {
                         <div class="contato"><i class="fa-brands fa-whatsapp-square"></i> <a href="https://wa.me/53999367651">Contato:(53)999367651</a>  
                         </div>
                         <div class="linkedin"><a href="https://www.linkedin.com/in/f%C3%A1bio-geovane-porto-vasques-analista-de-sistemas/"><i class="fa-brands fa-linkedin"></i>fabioportovasques</a> </div>
-                        <div class="git"><a href="https://github.com/fabioportovasques"><i class="fa-brands fa-github"></i> github</a></div>
+                        <div class="git"><a href="#"><i class="fa-brands fa-github"></i> github</a></div>
                     </div>
                     <div class="creditos">&copy; Desenvolvido por Fábio Vasques</div>
 

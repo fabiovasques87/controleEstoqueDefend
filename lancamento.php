@@ -249,6 +249,7 @@ $(function () {
                                             <label>Autorizado por quem?</label><span class="campo--obrigatorio">*</span>
                                             <select class="form-control"  name="nomeAutorizado" id="nomeAutorizado">
                                                 <option>Seleciona uma Opção</option>
+                                                <option>Isabel</option>
                                                 <option>Camila</option>
                                                 <option>Oliveira</option>
                                                 <option>Sandro</option>

@@ -26,7 +26,9 @@ public function __construct( ) {
 
 try {
 
-	$this -> pdo = new PDO("mysql:dbname=controle-estoque;host=localhost","fabio","F@bio102030");
+	$this -> pdo = new PDO("mysql:dbname=controle-estoque;host=localhost","fabio","F@bio102030",
+    array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")
+);
 
 } catch(PDOException $e) {
 	echo "ERRO: ".$e->getMessage();

@@ -792,6 +792,10 @@ a{
         margin-left:-600px;
     }
 
+    .painelCards{
+        margin-left: -110px;
+    }
+
     .menu, nav ul li{
         padding-bottom:20px;
     }

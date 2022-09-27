@@ -153,8 +153,9 @@ $(function () {
                     <div class="texto1">
                           A aplicação tem como objetivo gerenciar a saída de materiais do estoque, bem como 
                           saber quem foi a pessoa que está de posse do referido material, também é possível observar
-                          na Dashboard da aplicação as notificações de materiais com 10 dias ou mais sem devolução e os materiais/equipamentos
-                          com entrega vencida.
+                          na Dashboard da aplicação as notificações de materiais que ainda não foram devolvidos e os materiais/equipamentos
+                          com entrega vencida. Tabém é possível gerenciar o que foi enviado para concerto e saber o status do equipamento. 
+                          A aplicação também conta com a opção de gerar consultas por codigo do produto ou por nome do colaborador.
                     </div>
 
 

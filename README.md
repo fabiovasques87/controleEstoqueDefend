@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+Bem Vindo a aplicação de controle de sídas de estoque
 
 You can use the [editor on GitHub](https://github.com/fabioportovasques/controleMateriaisDefend/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -11,9 +11,12 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
+ Especificações para uso:
+
+ -É necessário que esteja desabilitado a opção "ONLY_FULL_GROUP_BY" no sql mode dentro do phpmyadmin e também instanciar o servidor interno do php (php -S 0.0.0.0:porta)
 ### Header 3
+
+
 
 - Bulleted
 - List

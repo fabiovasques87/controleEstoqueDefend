@@ -36,19 +36,25 @@ $stmt = $pdo->query("SELECT * FROM produto where codProd like '".$_POST['produto
     </thead>     -->
 <?php 
 
-if ($stmt->rowCount() > 0) {
-            while ($row = $stmt->fetch())
-        {
+while ($row = $stmt->fetch())
+{
 
-            ?>
-
-            <!--Os dados da resposta da query irão aparecer no input text-->
-            <input type="text" readonly="" class="form-control" value="<?php echo $row['descProd']; ?>">
-    <?php
-        }
-}else{
     ?>
-    <input type="text" readonly="" style="color:red;" class="form-control" value="Produto não cadastrado">
-    <?php
 
+    <input type="text" class="form-control" value="<?php echo $row['descProd']; ?>">
+
+    <!-- <tbody>
+        <tr>
+            <td><?php echo $row['codProd']; ?></td>
+            <td><?php echo $row['descProd']; ?></td>
+
+
+        </tr>
+    </tbody>    
+ -->
+    <?php
 }
+
+
+
+?>

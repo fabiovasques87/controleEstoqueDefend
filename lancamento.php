@@ -463,7 +463,7 @@ $(function () {
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <div class="tituloModalSucesso"><i class="fa-solid fa-check"></i>Sucesso</div>
+      <div class="tituloModalSucesso"><i class="fa-solid fa-check"></i>Cadastrado com sucesso</div>
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Sair</button>

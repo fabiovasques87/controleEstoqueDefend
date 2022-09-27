@@ -148,7 +148,7 @@ $(function () {
                     <div class="card--sub--1">
                         <div class="card" >
                                 <div class="card-body">
-                                    <h5 class="card-title">Materiais com entregas vencidas</h5>
+                                    <h5 class="card-title">Prazo de entrega vencido</h5>
                                     <div class="sub--title">
 
                                     <?php 
@@ -193,7 +193,7 @@ $(function () {
                     <div class="card--sub--2">
                         <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Materiais próximos de vencer</h5>
+                                    <h5 class="card-title">Prazo de entrega à vencer</h5>
                                     <div class="sub--title dev">
 
 

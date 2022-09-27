@@ -24,7 +24,7 @@ $(document).ready(function(){
                 data:dados,
                 success:function(data){
                     console.log(data);
-                    $('#resultado').html(data);     //limpara a div e logo após recer os dados
+                    $('#resultado').html(data);     //limpara a div e logo após recebe os dados
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown){
                     console.log(XMLHttpRequest);
